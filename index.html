@@ -16,7 +16,15 @@
   <nav class="navbar">
     <a href="index.html" class="nav-logo">AD Fitness</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li class="nav-item-dropdown">
+        <a href="index.html" class="nav-dropdown-toggle">Home <span class="dropdown-arrow">&#9662;</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+          <li><a href="index.html#who">Who I Work With</a></li>
+          <li><a href="index.html#testimonials">Client Reviews</a></li>
+        </ul>
+      </li>
       <li><a href="services.html">Services</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -72,7 +80,7 @@
   </section>
 
   <!-- Certifications -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="certifications">
     <div class="container">
       <h2>Certifications</h2>
       <p>Professionally certified across multiple disciplines with nearly two decades of hands-on experience.</p>
@@ -89,7 +97,7 @@
   </section>
 
   <!-- Who I Work With -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="who">
     <div class="container">
       <h2>Who I Work With</h2>
       <p>There's no perfect client, just people who are ready to start. Here are some of the people I work with every day.</p>
