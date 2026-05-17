@@ -1,3 +1,10 @@
+document.body.style.opacity = '';
+document.body.style.transition = '';
+
+window.addEventListener('hashchange', () => {
+  document.body.style.opacity = '1';
+});
+
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
 
