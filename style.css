@@ -784,13 +784,14 @@ a {
 .back-to-top {
   position: fixed;
   bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
   background: #0f2240;
   color: white;
   border: none;
   border-radius: 30px;
-  width: auto;
   height: 44px;
   padding: 0 1.5rem;
   gap: 0.5rem;
@@ -803,7 +804,7 @@ a {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s;
   z-index: 99;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -815,7 +816,6 @@ a {
 
 .back-to-top:hover {
   background: #1e3a5f;
-  transform: translateX(-50%) translateY(-2px);
 }
 
 /* Mobile */
