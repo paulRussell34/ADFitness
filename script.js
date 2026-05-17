@@ -66,6 +66,20 @@ if (tabBtns.length) {
   if (window.location.hash === '#faq') switchTab('faq');
 }
 
+// Contact form success message
+const formNext = document.getElementById('formNext');
+if (formNext) {
+  formNext.value = window.location.href.split('?')[0] + '?success=true';
+}
+if (window.location.search.includes('success=true')) {
+  const formSuccess = document.getElementById('formSuccess');
+  const contactForm = document.getElementById('contactForm');
+  const formNote = document.getElementById('formNote');
+  if (formSuccess) formSuccess.style.display = 'block';
+  if (contactForm) contactForm.style.display = 'none';
+  if (formNote) formNote.style.display = 'none';
+}
+
 // Fade out on page navigation
 document.querySelectorAll('a').forEach(link => {
   const href = link.getAttribute('href');

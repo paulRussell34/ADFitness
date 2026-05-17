@@ -74,6 +74,7 @@ a {
   color: #ffffff;
   border-bottom: 2px solid #a8c8f0;
   padding-bottom: 2px;
+  font-weight: 600;
 }
 
 /* Nav dropdown */
@@ -628,6 +629,24 @@ a {
   cursor: pointer;
   border: none;
   align-self: flex-start;
+}
+
+.form-success {
+  display: none;
+  background: #e8f4ee;
+  border: 1px solid #a8d5b8;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1e6b3a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-success p {
+  margin: 0;
+  color: #1e6b3a;
+  max-width: 100%;
 }
 
 .form-note {
