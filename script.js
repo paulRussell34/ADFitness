@@ -62,7 +62,7 @@ if (tabBtns.length) {
 // Fade out on page navigation
 document.querySelectorAll('a').forEach(link => {
   const href = link.getAttribute('href');
-  if (!href || href.startsWith('#') || href.startsWith('mailto') || href.startsWith('http')) return;
+  if (!href || href.includes('#') || href.startsWith('mailto') || href.startsWith('http')) return;
   link.addEventListener('click', e => {
     e.preventDefault();
     document.body.style.transition = 'opacity 0.2s ease';
