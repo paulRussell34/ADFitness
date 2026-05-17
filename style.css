@@ -396,27 +396,6 @@ a {
   max-width: 100%;
 }
 
-/* Video Grid */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.training-video {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  background: #000;
-}
-
-@media (max-width: 680px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Quote Banner */
 .quote-banner {
   background: #0f2240;
