@@ -87,7 +87,11 @@ a {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #0f2240 0%, #1e3a5f 100%);
+  background-color: #0f2240;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.07) 1.5px, transparent 1.5px),
+    linear-gradient(135deg, #0f2240 0%, #1e3a5f 100%);
+  background-size: 24px 24px, cover;
   color: white;
   min-height: 90vh;
   display: flex;
@@ -305,7 +309,9 @@ a {
 
 /* Footer */
 .footer {
-  background: #0f2240;
+  background-color: #0f2240;
+  background-image: radial-gradient(rgba(255,255,255,0.07) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
   color: #8aacd4;
   padding: 2.5rem 2rem 1.5rem;
   font-size: 0.9rem;
@@ -401,7 +407,9 @@ a {
 
 /* Quote Banner */
 .quote-banner {
-  background: #0f2240;
+  background-color: #0f2240;
+  background-image: radial-gradient(rgba(255,255,255,0.07) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -755,6 +763,109 @@ a {
   color: #555;
   margin: 0;
   max-width: 100%;
+}
+
+/* Certificate photo grid */
+.cert-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cert-photo {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cert-photo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Contact layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-sidebar {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-detail h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2a7de1;
+  margin-bottom: 0.4rem;
+}
+
+.contact-detail a,
+.contact-detail span {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.contact-detail a:hover {
+  color: #2a7de1;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.93rem;
+  color: #444;
+}
+
+.hours-row span:first-child {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.hours-note {
+  font-size: 0.82rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Footer phone */
+.footer-phone {
+  display: block;
+  color: #a8c8f0;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.footer-phone:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 680px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Tabs */
