@@ -787,6 +787,23 @@ a {
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
+@media (max-width: 680px) {
+  .cert-photos-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+    grid-template-columns: unset;
+  }
+
+  .cert-photo {
+    flex: 0 0 220px;
+    width: 220px;
+    scroll-snap-align: start;
+  }
+}
+
 /* Contact layout */
 .contact-layout {
   display: grid;
