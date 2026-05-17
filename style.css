@@ -158,6 +158,23 @@ a {
   margin-bottom: 2rem;
 }
 
+.hero-phone {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #a8c8f0;
+}
+
+.hero-phone a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-phone a:hover {
+  color: #a8c8f0;
+}
+
 /* Hero stats */
 .hero-stats {
   display: flex;
