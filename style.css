@@ -557,6 +557,25 @@ a {
   margin-top: 0.5rem;
 }
 
+/* Cert Badges */
+.cert-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.cert-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  background: #e8f0fb;
+  border: 1px solid #c8d8ec;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
 /* Areas Served */
 .area-tags {
   display: flex;
