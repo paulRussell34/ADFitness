@@ -1060,31 +1060,7 @@ a {
     font-size: 2rem;
   }
 
-  .nav-item-dropdown:hover .nav-dropdown {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: block;
-    position: static;
-    transform: none;
-    box-shadow: none;
-    border-top: none;
-    border-radius: 0;
-    background: transparent;
-    padding: 0 0 0 1rem;
-    min-width: unset;
-    border-left: 2px solid #2a7de1;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .nav-dropdown li a {
-    padding: 0.35rem 0.75rem;
-    font-size: 0.85rem;
-    color: #8aacd4;
-  }
-
+  .nav-dropdown,
   .dropdown-arrow {
     display: none;
   }
