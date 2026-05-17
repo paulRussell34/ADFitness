@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | AD Fitness</title>
-  <meta name="description" content="Book a free consultation with Antje at AD Fitness. Personal training in Ashburn, VA — private gym, in-home, and virtual sessions available." />
+  <meta name="description" content="Book a free consultation with Antje at AD Fitness. Personal training in Ashburn, VA: private gym, in-home, and virtual sessions available." />
   <meta property="og:title" content="Contact | AD Fitness" />
   <meta property="og:description" content="Book a free consultation with Antje at AD Fitness. Get started with personalized personal training in Northern Virginia." />
   <meta property="og:type" content="website" />
@@ -24,70 +24,76 @@
 
   <section class="section page-top">
     <div class="container">
-      <h2>Get Started</h2>
-      <p>Fill out the form below and Antje will get back to you to set up a free consultation.</p>
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/mpqnajao"
-        method="POST"
-      >
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <input type="tel" name="phone" placeholder="Your phone number (optional)" />
-        <textarea name="message" placeholder="Tell Antje a little about your goals..."></textarea>
-        <button type="submit" class="btn btn-navy">Send Message</button>
-      </form>
-      <p class="form-note">Prefer not to use the form? Reach out directly via <a href="https://www.instagram.com/ag_fitness_wellness_coach_" target="_blank">Instagram</a>.</p>
 
-      <div class="next-steps">
-        <h3>What happens next?</h3>
-        <ol class="steps-list">
-          <li>Antje reviews your message and gets back to you within 24 hours</li>
-          <li>You'll schedule a free 15-minute consultation to talk through your goals</li>
-          <li>Together you'll decide on the best training option and schedule your first session</li>
-        </ol>
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="contact">Get Started</button>
+        <button class="tab-btn" data-tab="faq">FAQ</button>
       </div>
-    </div>
-  </section>
 
-  <!-- Full FAQ -->
-  <section class="section section-alt" id="faq">
-    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>Am I too out of shape to start?</summary>
-          <p>Absolutely not. Antje works with people at every fitness level — from complete beginners to those returning after injury or a long break. Every program starts where you are, not where you think you should be.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you offer group sessions?</summary>
-          <p>Yes — small group sessions of 2–4 people are available at the private gym. A great option if you want to train with a friend or partner at a lower per-person cost.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What do I need for in-home sessions?</summary>
-          <p>Nothing special. Antje will build your program around whatever space and equipment you have — even if that's just a living room floor. She'll let you know if any simple equipment would help.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Where is the private gym located?</summary>
-          <p>The gym is located at Antje's home in Ashburn, VA. The exact address is shared after your free consultation is booked.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How long are sessions?</summary>
-          <p>Sessions are typically 45–60 minutes. Length can be adjusted based on your schedule and goals.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you offer packages or discounts?</summary>
-          <p>Yes — 5-session and 10-session packages are available at a discounted rate. Contact Antje for current pricing.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you work with people recovering from injuries?</summary>
-          <p>Yes. Antje holds a Cancer Exercise Specialist certification and has extensive experience training clients with physical limitations and special health considerations. She will always work within your doctor's guidelines.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How do I get started?</summary>
-          <p>Just fill out the contact form above. Antje will reach out within 24 hours to set up a free consultation where you can discuss your goals and find the right fit.</p>
-        </details>
+      <div class="tab-panel" id="tab-contact">
+        <h2>Get Started</h2>
+        <p>Fill out the form below and Antje will get back to you to set up a free consultation.</p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mpqnajao"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <input type="tel" name="phone" placeholder="Your phone number (optional)" />
+          <textarea name="message" placeholder="Tell Antje a little about your goals..."></textarea>
+          <button type="submit" class="btn btn-navy">Send Message</button>
+        </form>
+        <p class="form-note">Prefer not to use the form? Reach out directly via <a href="https://www.instagram.com/ag_fitness_wellness_coach_" target="_blank">Instagram</a>.</p>
+
+        <div class="next-steps">
+          <h3>What happens next?</h3>
+          <ol class="steps-list">
+            <li>Antje reviews your message and gets back to you within 24 hours</li>
+            <li>You'll schedule a free 15-minute consultation to talk through your goals</li>
+            <li>Together you'll decide on the best training option and schedule your first session</li>
+          </ol>
+        </div>
       </div>
+
+      <div class="tab-panel" id="tab-faq" hidden>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Am I too out of shape to start?</summary>
+            <p>Absolutely not. Antje works with people at every fitness level, from complete beginners to those returning after injury or a long break. Every program starts where you are, not where you think you should be.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer group sessions?</summary>
+            <p>Yes, small group sessions of 2–4 people are available at the private gym. A great option if you want to train with a friend or partner at a lower per-person cost.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What do I need for in-home sessions?</summary>
+            <p>Nothing special. Antje will build your program around whatever space and equipment you have, even if that's just a living room floor. She'll let you know if any simple equipment would help.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where is the private gym located?</summary>
+            <p>The gym is located at Antje's home in Ashburn, VA. The exact address is shared after your free consultation is booked.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long are sessions?</summary>
+            <p>Sessions are typically 45–60 minutes. Length can be adjusted based on your schedule and goals.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer packages or discounts?</summary>
+            <p>Yes, 5-session and 10-session packages are available at a discounted rate. Contact Antje for current pricing.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you work with people recovering from injuries?</summary>
+            <p>Yes. Antje holds a Cancer Exercise Specialist certification and has extensive experience training clients with physical limitations and special health considerations. She will always work within your doctor's guidelines.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I get started?</summary>
+            <p>Just fill out the contact form above. Antje will reach out within 24 hours to set up a free consultation where you can discuss your goals and find the right fit.</p>
+          </details>
+        </div>
+      </div>
+
     </div>
   </section>
 

@@ -46,6 +46,19 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+// Tab switching
+const tabBtns = document.querySelectorAll('.tab-btn');
+if (tabBtns.length) {
+  function switchTab(tabId) {
+    tabBtns.forEach(b => b.classList.toggle('active', b.dataset.tab === tabId));
+    document.querySelectorAll('.tab-panel').forEach(panel => {
+      panel.hidden = panel.id !== 'tab-' + tabId;
+    });
+  }
+  tabBtns.forEach(btn => btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
+  if (window.location.hash === '#faq') switchTab('faq');
+}
+
 // Fade out on page navigation
 document.querySelectorAll('a').forEach(link => {
   const href = link.getAttribute('href');
