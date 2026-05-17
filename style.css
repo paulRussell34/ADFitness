@@ -16,6 +16,9 @@ body {
   color: #1a1a1a;
   line-height: 1.6;
   animation: fadeIn 0.4s ease;
+  background-color: #ffffff;
+  background-image: radial-gradient(#d4e3f5 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
 }
 
 @keyframes fadeIn {
