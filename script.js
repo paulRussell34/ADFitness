@@ -21,6 +21,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
+// Back to top button
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 // Scroll-triggered fade-in animations
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
