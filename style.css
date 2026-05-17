@@ -500,6 +500,13 @@ a {
   font-weight: 700;
 }
 
+.availability-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
 .services-cta {
   margin-top: 3rem;
   padding-top: 2rem;
