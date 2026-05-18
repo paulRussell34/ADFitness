@@ -8,7 +8,7 @@
                 0 0 0 0 1
                 1 0 0 0 0" result="banded"/>
       <feComponentTransfer in="banded">
-        <feFuncA type="discrete" tableValues="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>
+        <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1"/>
       </feComponentTransfer>
     </filter>
   </defs>

@@ -133,7 +133,7 @@ a {
 .hero {
   background-color: #c41230;
   background-image:
-    url('topo-pattern.svg?v=3'),
+    url('topo-pattern.svg?v=4'),
     linear-gradient(135deg, #c41230 0%, #961028 100%);
   background-size: 600px 500px, cover;
   background-repeat: repeat, no-repeat;
@@ -392,7 +392,7 @@ a {
 /* Footer */
 .footer {
   background-color: #c41230;
-  background-image: url('topo-pattern.svg?v=3');
+  background-image: url('topo-pattern.svg?v=4');
   background-size: 600px 500px;
   color: #e8909a;
   padding: 2.5rem 2rem 1.5rem;
@@ -504,7 +504,7 @@ a {
 /* Quote Banner */
 .quote-banner {
   background-color: #c41230;
-  background-image: url('topo-pattern.svg?v=3');
+  background-image: url('topo-pattern.svg?v=4');
   background-size: 600px 500px;
   padding: 4rem 2rem;
   text-align: center;
