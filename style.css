@@ -131,8 +131,8 @@ a {
 
 /* Hero */
 .hero {
-  background-color: #c41230;
-  background-image: linear-gradient(135deg, #c41230 0%, #961028 100%);
+  background-color: #111111;
+  background-image: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
   position: relative;
   overflow: hidden;
   color: white;
@@ -156,14 +156,14 @@ a {
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #ffb3bc;
+  color: #aaaaaa;
   margin-bottom: 2rem;
 }
 
 .hero-phone {
   margin-top: 0.75rem;
   font-size: 0.9rem;
-  color: #ffb3bc;
+  color: #aaaaaa;
 }
 
 .hero-phone a {
@@ -204,7 +204,7 @@ a {
 .hero-stat-label {
   display: block;
   font-size: 0.85rem;
-  color: #ffb3bc;
+  color: #aaaaaa;
   margin-top: 0.2rem;
 }
 
@@ -390,10 +390,10 @@ a {
 
 /* Footer */
 .footer {
-  background-color: #c41230;
+  background-color: #111111;
   position: relative;
   overflow: hidden;
-  color: #e8909a;
+  color: #999999;
   padding: 2.5rem 2rem 1.5rem;
   font-size: 0.9rem;
 }
@@ -420,7 +420,7 @@ a {
 
 .footer-tagline {
   font-size: 0.85rem;
-  color: #e8909a;
+  color: #999999;
 }
 
 .footer-links {
@@ -431,7 +431,7 @@ a {
 }
 
 .footer-links a {
-  color: #e8909a;
+  color: #999999;
   font-size: 0.9rem;
   transition: color 0.2s;
 }
@@ -449,11 +449,11 @@ a {
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 0.82rem;
-  color: #c4707a;
+  color: #666666;
 }
 
 .footer-bottom a {
-  color: #ffb3bc;
+  color: #cccccc;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -983,7 +983,7 @@ a {
 /* Footer phone */
 .footer-phone {
   display: block;
-  color: #ffb3bc;
+  color: #cccccc;
   margin-top: 0.3rem;
   font-size: 0.9rem;
 }
