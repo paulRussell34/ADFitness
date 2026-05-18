@@ -17,8 +17,6 @@ body {
   line-height: 1.6;
   animation: fadeIn 0.4s ease forwards;
   background-color: #ffffff;
-  background-image: radial-gradient(#f5d0d3 1.5px, transparent 1.5px);
-  background-size: 24px 24px;
 }
 
 @keyframes fadeIn {
@@ -48,10 +46,11 @@ a {
 }
 
 .nav-logo {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 800;
   color: #ffffff;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -147,10 +146,12 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  text-transform: uppercase;
 }
 
 .hero-content p {
@@ -194,9 +195,10 @@ a {
 .hero-stat-number {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 800;
   color: #ffffff;
+  line-height: 1;
 }
 
 .hero-stat-label {
@@ -211,10 +213,12 @@ a {
   display: inline-block;
   background: #ffffff;
   color: #c41230;
-  padding: 0.85rem 2rem;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 1rem 2.4rem;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: background 0.2s, color 0.2s;
 }
 
@@ -238,9 +242,22 @@ a {
 }
 
 .section h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #c41230;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
 }
 
 .section p {
@@ -301,7 +318,8 @@ a {
 
 .card {
   background: white;
-  border-radius: 8px;
+  border-radius: 4px;
+  border-top: 4px solid #c41230;
   padding: 1.8rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -493,12 +511,12 @@ a {
 
 .quote-banner blockquote {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #ffffff;
   max-width: 760px;
   margin: 0 auto 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   position: relative;
 }
 
@@ -1108,7 +1126,12 @@ a {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
   }
 
   .nav-dropdown,
