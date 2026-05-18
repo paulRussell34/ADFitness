@@ -453,6 +453,20 @@ a {
   margin-bottom: 0.75rem;
 }
 
+.price-tag-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.price-tag-secondary span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #888;
+}
+
 .price-tag span {
   font-size: 0.9rem;
   font-weight: 500;
