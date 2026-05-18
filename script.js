@@ -31,7 +31,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // Back to top button
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 50) {
     backToTop.classList.add('visible');
   } else {
     backToTop.classList.remove('visible');
