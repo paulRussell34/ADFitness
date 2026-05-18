@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500">
+  <g fill="none" stroke="white" stroke-opacity="0.1" stroke-width="1.5">
+    <!-- Main hill center -->
+    <ellipse cx="300" cy="250" rx="280" ry="165" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="235" ry="135" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="188" ry="108" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="142" ry="82" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="98" ry="56" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="58" ry="33" transform="rotate(-8 300 250)"/>
+    <ellipse cx="300" cy="250" rx="26" ry="15" transform="rotate(-8 300 250)"/>
+    <!-- Corner hill top-right (tiles with adjacent) -->
+    <ellipse cx="580" cy="60" rx="160" ry="100" transform="rotate(15 580 60)"/>
+    <ellipse cx="580" cy="60" rx="118" ry="72" transform="rotate(15 580 60)"/>
+    <ellipse cx="580" cy="60" rx="78" ry="48" transform="rotate(15 580 60)"/>
+    <ellipse cx="580" cy="60" rx="42" ry="26" transform="rotate(15 580 60)"/>
+    <!-- Corner hill bottom-left (tiles with adjacent) -->
+    <ellipse cx="30" cy="450" rx="145" ry="90" transform="rotate(-10 30 450)"/>
+    <ellipse cx="30" cy="450" rx="100" ry="62" transform="rotate(-10 30 450)"/>
+    <ellipse cx="30" cy="450" rx="60" ry="38" transform="rotate(-10 30 450)"/>
+    <ellipse cx="30" cy="450" rx="28" ry="18" transform="rotate(-10 30 450)"/>
+  </g>
+</svg>
