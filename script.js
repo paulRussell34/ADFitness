@@ -80,6 +80,24 @@ if (window.location.search.includes('success=true')) {
   if (formNote) formNote.style.display = 'none';
 }
 
+// Topo pattern — injected as DOM SVG so it renders on mobile (CSS background SVG filters don't work on iOS Safari)
+document.querySelectorAll('.hero, .footer, .quote-banner').forEach((el, i) => {
+  el.insertAdjacentHTML('afterbegin', `
+    <svg class="topo-overlay" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <filter id="topo-${i}">
+          <feTurbulence type="turbulence" baseFrequency="0.006 0.009" numOctaves="4" seed="17" stitchTiles="stitch"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0"/>
+          <feComponentTransfer>
+            <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1"/>
+          </feComponentTransfer>
+        </filter>
+      </defs>
+      <rect width="100%" height="100%" filter="url(#topo-${i})" opacity="0.14"/>
+    </svg>
+  `);
+});
+
 // Fade out on page navigation
 document.querySelectorAll('a').forEach(link => {
   const href = link.getAttribute('href');
