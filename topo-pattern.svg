@@ -1,22 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500">
-  <g fill="none" stroke="white" stroke-opacity="0.1" stroke-width="1.5">
-    <!-- Main hill center -->
-    <ellipse cx="300" cy="250" rx="280" ry="165" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="235" ry="135" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="188" ry="108" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="142" ry="82" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="98" ry="56" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="58" ry="33" transform="rotate(-8 300 250)"/>
-    <ellipse cx="300" cy="250" rx="26" ry="15" transform="rotate(-8 300 250)"/>
-    <!-- Corner hill top-right (tiles with adjacent) -->
-    <ellipse cx="580" cy="60" rx="160" ry="100" transform="rotate(15 580 60)"/>
-    <ellipse cx="580" cy="60" rx="118" ry="72" transform="rotate(15 580 60)"/>
-    <ellipse cx="580" cy="60" rx="78" ry="48" transform="rotate(15 580 60)"/>
-    <ellipse cx="580" cy="60" rx="42" ry="26" transform="rotate(15 580 60)"/>
-    <!-- Corner hill bottom-left (tiles with adjacent) -->
-    <ellipse cx="30" cy="450" rx="145" ry="90" transform="rotate(-10 30 450)"/>
-    <ellipse cx="30" cy="450" rx="100" ry="62" transform="rotate(-10 30 450)"/>
-    <ellipse cx="30" cy="450" rx="60" ry="38" transform="rotate(-10 30 450)"/>
-    <ellipse cx="30" cy="450" rx="28" ry="18" transform="rotate(-10 30 450)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Main hill - center -->
+    <path stroke-opacity="0.18" stroke-width="1.8" d="M155,295 C165,170 255,100 385,112 C515,124 598,198 605,310 C612,422 538,505 400,514 C262,523 145,420 155,295 Z"/>
+    <path stroke-opacity="0.15" stroke-width="1.4" d="M186,295 C194,188 270,128 385,138 C500,148 572,214 578,310 C584,406 518,482 400,490 C282,498 178,402 186,295 Z"/>
+    <path stroke-opacity="0.15" stroke-width="1.4" d="M218,297 C224,208 286,156 385,164 C484,172 545,230 550,310 C555,390 496,460 400,467 C304,474 212,386 218,297 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M250,298 C255,228 302,182 385,189 C468,196 518,246 523,310 C528,374 476,438 400,444 C324,450 245,368 250,298 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M282,299 C286,248 318,208 385,214 C452,220 491,262 496,310 C501,358 456,416 400,421 C344,426 278,350 282,299 Z"/>
+    <path stroke-opacity="0.18" stroke-width="1.8" d="M314,300 C317,268 336,236 385,240 C434,244 463,278 467,310 C471,342 442,394 400,398 C358,402 311,332 314,300 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M347,301 C349,282 360,260 385,263 C410,266 427,285 430,310 C433,335 414,364 393,364 C372,364 345,320 347,301 Z"/>
+    <path stroke-opacity="0.11" stroke-width="1" d="M368,304 C369,293 374,278 385,280 C396,282 405,294 407,310 C409,326 399,342 388,342 C377,342 367,315 368,304 Z"/>
+
+    <!-- Upper right hill -->
+    <path stroke-opacity="0.15" stroke-width="1.4" d="M598,42 C656,14 744,36 784,88 C824,140 806,206 763,226 C720,246 654,224 622,180 C590,136 578,72 598,42 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M616,57 C666,33 742,53 778,100 C814,147 798,204 759,222 C720,240 660,218 632,178 C604,138 594,83 616,57 Z"/>
+    <path stroke-opacity="0.18" stroke-width="1.8" d="M634,72 C676,52 740,70 772,112 C804,154 789,202 754,218 C719,234 665,213 640,177 C615,141 610,94 634,72 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M652,88 C686,72 738,87 765,124 C792,161 779,200 748,214 C717,228 670,207 649,175 C628,143 622,106 652,88 Z"/>
+    <path stroke-opacity="0.11" stroke-width="1" d="M672,105 C698,92 738,105 760,137 C782,169 770,198 743,210 C716,222 675,202 658,173 C641,144 642,120 672,105 Z"/>
+
+    <!-- Lower left hill -->
+    <path stroke-opacity="0.15" stroke-width="1.4" d="M15,448 C34,374 108,332 184,352 C260,372 294,438 284,502 C274,566 208,598 143,586 C78,574 14,522 15,448 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M38,449 C54,386 116,350 178,367 C240,384 268,442 259,499 C250,556 192,584 140,573 C88,562 40,512 38,449 Z"/>
+    <path stroke-opacity="0.18" stroke-width="1.8" d="M61,450 C74,398 124,368 173,382 C222,396 244,447 236,497 C228,547 186,572 140,562 C94,552 60,502 61,450 Z"/>
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M84,452 C95,411 132,386 172,397 C212,408 228,452 221,495 C214,538 180,560 140,551 C100,542 80,493 84,452 Z"/>
+    <path stroke-opacity="0.11" stroke-width="1" d="M108,454 C117,424 140,404 171,413 C202,422 212,458 206,494 C200,530 174,548 140,540 C106,532 100,484 108,454 Z"/>
+
+    <!-- Bottom right smaller hill -->
+    <path stroke-opacity="0.13" stroke-width="1.2" d="M680,490 C710,450 764,440 800,462 C836,484 840,530 818,558 C796,586 754,594 720,576 C686,558 668,524 680,490 Z"/>
+    <path stroke-opacity="0.11" stroke-width="1" d="M698,494 C722,460 768,451 800,470 C832,489 836,529 816,554 C796,579 756,586 723,569 C690,552 676,528 698,494 Z"/>
+    <path stroke-opacity="0.09" stroke-width="1" d="M716,499 C734,470 772,462 800,478 C828,494 832,528 814,550 C796,572 758,578 726,562 C694,546 700,528 716,499 Z"/>
+
   </g>
 </svg>
