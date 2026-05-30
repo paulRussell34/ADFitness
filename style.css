@@ -1088,17 +1088,15 @@ a {
   justify-content: center;
   cursor: pointer;
   opacity: 0;
-  visibility: hidden;
-  transform: translateY(16px);
-  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  pointer-events: none;
+  transition: opacity 0.3s;
   z-index: 99;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .back-to-top.visible {
   opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .back-to-top:hover {
