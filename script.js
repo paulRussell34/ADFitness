@@ -32,13 +32,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Back to top button
 const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
+(function checkScroll() {
   if (window.scrollY > 10) {
     backToTop.classList.add('visible');
   } else {
     backToTop.classList.remove('visible');
   }
-});
+  requestAnimationFrame(checkScroll);
+})();
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
