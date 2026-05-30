@@ -1,7 +1,7 @@
 document.body.style.opacity = '';
 document.body.style.transition = '';
 history.scrollRestoration = 'manual';
-window.scrollTo(0, 0);
+window.addEventListener('load', () => window.scrollTo(0, 0));
 
 window.addEventListener('hashchange', () => {
   document.body.style.opacity = '1';
@@ -34,7 +34,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  const nearBottom = scrollY + window.innerHeight >= document.body.scrollHeight - 80;
+  const nearBottom = scrollY + window.innerHeight >= document.body.scrollHeight - 150;
   if (scrollY > 10 && !nearBottom) {
     backToTop.classList.add('visible');
   } else {
