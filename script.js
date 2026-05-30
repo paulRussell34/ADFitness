@@ -1,5 +1,7 @@
 document.body.style.opacity = '';
 document.body.style.transition = '';
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
 
 window.addEventListener('hashchange', () => {
   document.body.style.opacity = '1';
@@ -33,7 +35,7 @@ const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const nearBottom = scrollY + window.innerHeight >= document.body.scrollHeight - 80;
-  if (scrollY > 50 && !nearBottom) {
+  if (scrollY > 10 && !nearBottom) {
     backToTop.classList.add('visible');
   } else {
     backToTop.classList.remove('visible');
