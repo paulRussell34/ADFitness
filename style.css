@@ -1065,6 +1065,31 @@ a {
   font-weight: 700;
 }
 
+/* Google Review CTA */
+.review-cta {
+  background: #c41230;
+}
+.review-cta h2,
+.review-cta p {
+  color: white;
+}
+.review-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.btn-white {
+  background: white;
+  color: #c41230;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.btn-white:hover {
+  background: #f0f0f0;
+}
+
 /* Back to Top */
 .back-to-top {
   position: fixed;
