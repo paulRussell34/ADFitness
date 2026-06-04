@@ -32,8 +32,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Back to top button
 const backToTop = document.getElementById('backToTop');
+const footer = document.querySelector('.footer');
 (function checkScroll() {
-  if (window.scrollY > 10) {
+  const scrollY = window.scrollY;
+  const footerTop = footer.getBoundingClientRect().top;
+  if (scrollY > 10 && footerTop > 80) {
     backToTop.classList.add('visible');
   } else {
     backToTop.classList.remove('visible');
