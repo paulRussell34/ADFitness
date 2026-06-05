@@ -1224,3 +1224,52 @@ a {
     display: none;
   }
 }
+
+/* Partners section */
+.partners-section {
+  background-color: #f0f4fa;
+}
+
+.partner-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-left: 4px solid #c8102e;
+}
+
+.partner-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f2240;
+  margin-bottom: 0.25rem;
+}
+
+.partner-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c8102e;
+  margin-bottom: 0.75rem;
+}
+
+.partner-bio {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.partner-link {
+  display: inline-block;
+  color: #2a7de1;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.partner-link:hover {
+  text-decoration: underline;
+}
