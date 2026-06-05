@@ -72,18 +72,48 @@ if (tabBtns.length) {
   if (window.location.hash === '#faq') switchTab('faq');
 }
 
-// Contact form success message
-const formNext = document.getElementById('formNext');
-if (formNext) {
-  formNext.value = window.location.href.split('?')[0] + '?success=true';
-}
-if (window.location.search.includes('success=true')) {
+// Contact form — AJAX submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
   const formSuccess = document.getElementById('formSuccess');
-  const contactForm = document.getElementById('contactForm');
   const formNote = document.getElementById('formNote');
-  if (formSuccess) formSuccess.style.display = 'block';
-  if (contactForm) contactForm.style.display = 'none';
-  if (formNote) formNote.style.display = 'none';
+  const submitBtn = document.getElementById('submitBtn');
+  const formReset = document.getElementById('formReset');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        contactForm.style.display = 'none';
+        formNote.style.display = 'none';
+        formSuccess.style.display = 'block';
+        contactForm.reset();
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+        alert('Something went wrong. Please try again or call directly.');
+      }
+    } catch {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+      alert('Something went wrong. Please try again or call directly.');
+    }
+  });
+
+  formReset.addEventListener('click', () => {
+    formSuccess.style.display = 'none';
+    formNote.style.display = 'block';
+    contactForm.style.display = 'flex';
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  });
 }
 
 
