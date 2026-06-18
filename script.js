@@ -1,7 +1,5 @@
 document.body.style.opacity = '';
 document.body.style.transition = '';
-history.scrollRestoration = 'manual';
-window.addEventListener('load', () => window.scrollTo(0, 0));
 
 window.addEventListener('hashchange', () => {
   document.body.style.opacity = '1';
@@ -11,13 +9,36 @@ const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
 
 navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+  navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+
+// Close mobile menu on Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+    navToggle.focus();
+  }
+});
+
+// Close mobile menu on outside click
+document.addEventListener('click', e => {
+  if (!e.target.closest('.navbar') && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+  }
 });
 
 // Close mobile menu when any nav link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
   });
 });
 
@@ -79,9 +100,11 @@ if (contactForm) {
   const formNote = document.getElementById('formNote');
   const submitBtn = document.getElementById('submitBtn');
   const formReset = document.getElementById('formReset');
+  const formError = document.getElementById('formError');
 
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    formError.style.display = 'none';
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     try {
@@ -98,12 +121,14 @@ if (contactForm) {
       } else {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
-        alert('Something went wrong. Please try again or call directly.');
+        formError.textContent = 'Something went wrong. Please try again or call directly.';
+        formError.style.display = 'block';
       }
     } catch {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send Message';
-      alert('Something went wrong. Please try again or call directly.');
+      formError.textContent = 'Something went wrong. Please try again or call directly.';
+      formError.style.display = 'block';
     }
   });
 

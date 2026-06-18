@@ -103,7 +103,8 @@ a {
   z-index: 200;
 }
 
-.nav-item-dropdown:hover .nav-dropdown {
+.nav-item-dropdown:hover .nav-dropdown,
+.nav-item-dropdown:focus-within .nav-dropdown {
   display: block;
 }
 
@@ -686,6 +687,32 @@ a {
   font-size: 0.85rem;
   color: #888;
   margin-top: 0.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.label-optional {
+  font-weight: 400;
+  color: #888;
+}
+
+.form-error {
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: #721c24;
+  font-size: 0.9rem;
 }
 
 /* Who I Work With */
